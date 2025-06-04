@@ -83,7 +83,7 @@ export default function Home() {
                   <p className="mb-6">
                     The visualisation leverages cutting-edge React components and data visualisation 
                     libraries to transform raw data into meaningful insights, providing an interactive 
-                    experience that allows users to explore and understand the Four Corner Model's 
+                    experience that allows users to explore and understand the Four Corner Model&apos;s 
                     various dimensions and relationships.
                   </p>
                   
@@ -184,7 +184,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Interactive Experience</h3>
                 <p className="text-muted-foreground">
-                  Engaging visualisations that allow for deep exploration of the model's data points.
+                  Engaging visualisations that allow for deep exploration of the model&apos;s data points.
                 </p>
               </div>
             </div>

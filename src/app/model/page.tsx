@@ -1,8 +1,8 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar, PieChart, Pie, Cell, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, AreaChart, Area } from 'recharts';
-import { TrendingUp, TrendingDown, Minus, User, Activity, Brain, Users, Target, Calendar, Award, AlertCircle, CheckCircle, Clock, MapPin } from 'lucide-react';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar } from 'recharts';
+import { TrendingUp, TrendingDown, Minus, User, Activity, Brain, Users, Target, Calendar, Award, CheckCircle, Clock } from 'lucide-react';
 
 // Type definitions
 interface PlayerData {
@@ -493,7 +493,7 @@ const FAFourCornerDashboard = () => {
                         <td className="py-3 px-4 text-gray-900">{match.date}</td>
                         <td className="py-3 px-4 text-gray-900">{match.opponent}</td>
                         <td className="py-3 px-4 text-gray-700">{match.position}</td>
-                        <td className="py-3 px-4 text-gray-700">{match.minutes}'</td>
+                        <td className="py-3 px-4 text-gray-700">{match.minutes}&apos;</td>
                         <td className="py-3 px-4">
                           <span className={`font-semibold ${
                             match.rating >= 8 ? 'text-green-600' : 
@@ -804,17 +804,17 @@ const FAFourCornerDashboard = () => {
               <div className="space-y-4">
                 <div className="border-l-4 border-green-500 pl-4">
                   <p className="text-gray-700 italic">
-                    "James continues to excel in technical and psychological areas. His game intelligence and passing ability 
+                    &ldquo;James continues to excel in technical and psychological areas. His game intelligence and passing ability 
                     are exceptional for his age group. The focus on physical development, particularly sprint speed and power, 
-                    will unlock his full potential as a box-to-box midfielder."
+                    will unlock his full potential as a box-to-box midfielder.&rdquo;
                   </p>
                   <p className="text-sm text-gray-500 mt-2">— Academy Manager, {data.currentAssessment.date}</p>
                 </div>
                 <div className="border-l-4 border-blue-500 pl-4">
                   <p className="text-gray-700 italic">
-                    "Outstanding professional attitude and communication skills. James naturally organises the team from 
+                    &ldquo;Outstanding professional attitude and communication skills. James naturally organises the team from 
                     central midfield and shows mature decision-making under pressure. Shooting accuracy is the key area 
-                    for technical improvement."
+                    for technical improvement.&rdquo;
                   </p>
                   <p className="text-sm text-gray-500 mt-2">— First Team Coach, 25 May 2025</p>
                 </div>
