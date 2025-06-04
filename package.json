@@ -1,5 +1,5 @@
 {
-  "name": "smp-clinic",
+  "name": "dna-1",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -41,5 +41,5 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   },
-  "description": "SMP Clinic - Professional Medical Content Management System"
+  "description": "DNA-1 - Data Visualisation for FA Four Corner Model"
 }

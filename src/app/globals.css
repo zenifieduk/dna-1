@@ -82,3 +82,10 @@ body {
     display: none; /* Chrome, Safari and Opera */
   }
 }
+
+/* Animation for circular progress bars */
+@keyframes fillCircle {
+  to {
+    stroke-dashoffset: var(--target-offset);
+  }
+}

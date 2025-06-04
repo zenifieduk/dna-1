@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Magicalogical / Alan Batt Tech Dev Mini-site",
-  description: "Revolutionary client-developer collaboration",
+  title: "Data Visualisation",
+  description: "React-based data visualization showcase for the FA Four Corner Model",
   other: {
     "color-scheme": "light only",
   },
