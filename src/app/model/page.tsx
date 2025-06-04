@@ -1,8 +1,11 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
+import { Button } from "@/components/ui/button";
+import { MobileMenu } from "@/components/ui/mobile-menu";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar } from 'recharts';
-import { TrendingUp, TrendingDown, Minus, User, Activity, Brain, Users, Target, Calendar, Award, CheckCircle, Clock } from 'lucide-react';
+import { TrendingUp, TrendingDown, Minus, User, Activity, Brain, Users, Target, Calendar, Award, CheckCircle, Clock, BarChart3, Github } from 'lucide-react';
 
 // Type definitions
 interface PlayerData {
@@ -323,6 +326,41 @@ const FAFourCornerDashboard = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
+      <header className="container mx-auto px-4 py-6 bg-white shadow-sm">
+        <nav className="flex items-center justify-between">
+          <div className="flex items-center space-x-2">
+            <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
+              <BarChart3 className="h-5 w-5 text-primary-foreground" />
+            </div>
+            <span className="text-xl font-bold">Data Visualisation</span>
+          </div>
+          <div className="flex items-center space-x-6">
+            {/* Desktop Navigation - Hidden on mobile */}
+            <div className="hidden lg:flex items-center space-x-6">
+              <Button variant="ghost" asChild>
+                <Link href="/">Home</Link>
+              </Button>
+              <Button variant="ghost" asChild>
+                <Link href="/dashboard">Dashboard</Link>
+              </Button>
+              <Button variant="ghost" asChild>
+                <Link href="/model">Four Corner Model</Link>
+              </Button>
+              <Button variant="outline" size="sm" asChild>
+                <Link href="https://github.com/zenifieduk/dna-1" target="_blank">
+                  <Github className="h-4 w-4 mr-2" />
+                  GitHub
+                </Link>
+              </Button>
+            </div>
+            
+            {/* Mobile Menu */}
+            <MobileMenu currentPage="model" />
+          </div>
+        </nav>
+      </header>
+
+      {/* Player Dashboard Header */}
       <div className="bg-white shadow-sm border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
           {/* Main player info row */}
