@@ -164,10 +164,10 @@ export default function Home() {
                   </div>
                 </div>
                 <h3 className="text-lg font-semibold mb-3 text-blue-900">Player Profile Header</h3>
-                <ul className="text-sm text-slate-600 space-y-2">
-                  <li>• James Richardson, 19-year-old English Central Midfielder</li>
-                  <li>• Club #23 with 82/100 overall rating</li>
-                  <li>• Professional layout with gradient avatar</li>
+                <ul className="text-sm text-slate-600 space-y-2 list-disc list-outside ml-5">
+                  <li>James Richardson, 19-year-old English Central Midfielder</li>
+                  <li>Club #23 with 82/100 overall rating</li>
+                  <li>Professional layout with gradient avatar</li>
                 </ul>
               </div>
 
@@ -179,11 +179,11 @@ export default function Home() {
                   </div>
                 </div>
                 <h3 className="text-lg font-semibold mb-3 text-red-900">Four Corner Gauges</h3>
-                <ul className="text-sm text-slate-600 space-y-2">
-                  <li>• <span className="text-red-600 font-medium">Technical</span>: 85/100 - GREEN status</li>
-                  <li>• <span className="text-yellow-600 font-medium">Physical</span>: 78/100 - AMBER status</li>
-                  <li>• <span className="text-blue-600 font-medium">Psychological</span>: 86/100 - GREEN status</li>
-                  <li>• <span className="text-green-600 font-medium">Social</span>: 81/100 - GREEN status</li>
+                <ul className="text-sm text-slate-600 space-y-2 list-disc list-outside ml-5">
+                  <li><span className="text-red-600 font-medium">Technical</span>: 85/100 - GREEN status</li>
+                  <li><span className="text-yellow-600 font-medium">Physical</span>: 78/100 - AMBER status</li>
+                  <li><span className="text-blue-600 font-medium">Psychological</span>: 86/100 - GREEN status</li>
+                  <li><span className="text-green-600 font-medium">Social</span>: 81/100 - GREEN status</li>
                 </ul>
               </div>
 
@@ -195,12 +195,12 @@ export default function Home() {
                   </div>
                 </div>
                 <h3 className="text-lg font-semibold mb-3 text-purple-900">Interactive Tabs</h3>
-                <ul className="text-sm text-slate-600 space-y-2">
-                  <li>• Overview: Radar chart, historical trends, recent matches</li>
-                  <li>• Technical/Tactical: 8 skills with ratings and trends</li>
-                  <li>• Physical: 8 attributes including endurance and speed</li>
-                  <li>• Psychological: 8 mental traits and decision making</li>
-                  <li>• Social: Communication and teamwork skills</li>
+                <ul className="text-sm text-slate-600 space-y-2 list-disc list-outside ml-5">
+                  <li>Overview: Radar chart, historical trends, recent matches</li>
+                  <li>Technical/Tactical: 8 skills with ratings and trends</li>
+                  <li>Physical: 8 attributes including endurance and speed</li>
+                  <li>Psychological: 8 mental traits and decision making</li>
+                  <li>Social: Communication and teamwork skills</li>
                 </ul>
               </div>
 
@@ -212,11 +212,11 @@ export default function Home() {
                   </div>
                 </div>
                 <h3 className="text-lg font-semibold mb-3 text-green-900">Professional Visualisations</h3>
-                <ul className="text-sm text-slate-600 space-y-2">
-                  <li>• Radar chart comparing player vs club averages</li>
-                  <li>• Historical development trend lines</li>
-                  <li>• Recent match performance table</li>
-                  <li>• Development priority progress bars</li>
+                <ul className="text-sm text-slate-600 space-y-2 list-disc list-outside ml-5">
+                  <li>Radar chart comparing player vs club averages</li>
+                  <li>Historical development trend lines</li>
+                  <li>Recent match performance table</li>
+                  <li>Development priority progress bars</li>
                 </ul>
               </div>
 
@@ -228,11 +228,11 @@ export default function Home() {
                   </div>
                 </div>
                 <h3 className="text-lg font-semibold mb-3 text-orange-900">Development Plan</h3>
-                <ul className="text-sm text-slate-600 space-y-2">
-                  <li>• Progress bars with completion tracking</li>
-                  <li>• Action plans with priority classifications</li>
-                  <li>• Coach comments and feedback system</li>
-                  <li>• Super strength and development area indicators</li>
+                <ul className="text-sm text-slate-600 space-y-2 list-disc list-outside ml-5">
+                  <li>Progress bars with completion tracking</li>
+                  <li>Action plans with priority classifications</li>
+                  <li>Coach comments and feedback system</li>
+                  <li>Super strength and development area indicators</li>
                 </ul>
               </div>
 
@@ -244,11 +244,11 @@ export default function Home() {
                   </div>
                 </div>
                 <h3 className="text-lg font-semibold mb-3 text-emerald-900">Authentic Details</h3>
-                <ul className="text-sm text-slate-600 space-y-2">
-                  <li>• UK football terminology throughout</li>
-                  <li>• Professional assessment language</li>
-                  <li>• RAG status badges (Red/Amber/Green)</li>
-                  <li>• EPPP compliant footer</li>
+                <ul className="text-sm text-slate-600 space-y-2 list-disc list-outside ml-5">
+                  <li>UK football terminology throughout</li>
+                  <li>Professional assessment language</li>
+                  <li>RAG status badges (Red/Amber/Green)</li>
+                  <li>EPPP compliant footer</li>
                 </ul>
               </div>
             </div>
