@@ -401,6 +401,15 @@ const FAFourCornerDashboard = () => {
             <div className="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
               <div className="flex items-center justify-between">
                 <div>
+                  <p className="text-sm font-medium text-gray-600">Next Review</p>
+                  <p className="text-xl font-bold text-gray-900">{data.currentAssessment.nextReview}</p>
+                </div>
+                <Calendar className="w-8 h-8 text-green-600" />
+              </div>
+            </div>
+            <div className="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
+              <div className="flex items-center justify-between">
+                <div>
                   <p className="text-sm font-medium text-gray-600">Last Match Rating</p>
                   <p className="text-xl font-bold text-gray-900">{data.recentMatches[0].rating}/10</p>
                 </div>
