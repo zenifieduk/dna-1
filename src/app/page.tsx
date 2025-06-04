@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
-import { BarChart3, Database, TrendingUp, PieChart, Github, ArrowRight } from "lucide-react"
+import { BarChart3, Database, TrendingUp, PieChart, Github, ArrowRight, User, Gauge, Navigation, LineChart, CheckCircle, Target, Activity } from "lucide-react"
 import { MobileMenu } from "@/components/ui/mobile-menu"
 
 export default function Home() {
@@ -136,6 +136,139 @@ export default function Home() {
                   Explore Four Corner Model
                 </Link>
               </Button>
+            </div>
+          </div>
+
+          {/* Features Showcase */}
+          <div className="border-t border-slate-200 pt-20 pb-20">
+            <div className="text-center mb-16">
+              <span className="inline-flex items-center rounded-full bg-green-100 px-4 py-2 text-sm font-medium text-green-800 ring-1 ring-inset ring-green-600/20 mb-6">
+                <CheckCircle className="h-4 w-4 mr-2" />
+                Complete Features
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-slate-900">
+                Four Corner Model Implementation
+              </h2>
+              <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+                Professional player assessment system with comprehensive visualisation and authentic UK football terminology.
+              </p>
+            </div>
+
+            {/* Features Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {/* Player Profile Header */}
+              <div className="p-6 rounded-lg border bg-card text-card-foreground shadow-sm">
+                <div className="mb-4">
+                  <div className="h-12 w-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <User className="h-6 w-6 text-blue-600" />
+                  </div>
+                </div>
+                <h3 className="text-lg font-semibold mb-3 text-blue-900">Player Profile Header</h3>
+                <ul className="text-sm text-slate-600 space-y-2">
+                  <li>• James Richardson, 19-year-old English Central Midfielder</li>
+                  <li>• Club #23 with 82/100 overall rating</li>
+                  <li>• Professional layout with gradient avatar</li>
+                </ul>
+              </div>
+
+              {/* Four Corner Gauges */}
+              <div className="p-6 rounded-lg border bg-card text-card-foreground shadow-sm">
+                <div className="mb-4">
+                  <div className="h-12 w-12 bg-red-100 rounded-lg flex items-center justify-center">
+                    <Gauge className="h-6 w-6 text-red-600" />
+                  </div>
+                </div>
+                <h3 className="text-lg font-semibold mb-3 text-red-900">Four Corner Gauges</h3>
+                <ul className="text-sm text-slate-600 space-y-2">
+                  <li>• <span className="text-red-600 font-medium">Technical</span>: 85/100 - GREEN status</li>
+                  <li>• <span className="text-yellow-600 font-medium">Physical</span>: 78/100 - AMBER status</li>
+                  <li>• <span className="text-blue-600 font-medium">Psychological</span>: 86/100 - GREEN status</li>
+                  <li>• <span className="text-green-600 font-medium">Social</span>: 81/100 - GREEN status</li>
+                </ul>
+              </div>
+
+              {/* Interactive Tabs */}
+              <div className="p-6 rounded-lg border bg-card text-card-foreground shadow-sm">
+                <div className="mb-4">
+                  <div className="h-12 w-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                    <Navigation className="h-6 w-6 text-purple-600" />
+                  </div>
+                </div>
+                <h3 className="text-lg font-semibold mb-3 text-purple-900">Interactive Tabs</h3>
+                <ul className="text-sm text-slate-600 space-y-2">
+                  <li>• Overview: Radar chart, historical trends, recent matches</li>
+                  <li>• Technical/Tactical: 8 skills with ratings and trends</li>
+                  <li>• Physical: 8 attributes including endurance and speed</li>
+                  <li>• Psychological: 8 mental traits and decision making</li>
+                  <li>• Social: Communication and teamwork skills</li>
+                </ul>
+              </div>
+
+              {/* Professional Visualizations */}
+              <div className="p-6 rounded-lg border bg-card text-card-foreground shadow-sm">
+                <div className="mb-4">
+                  <div className="h-12 w-12 bg-green-100 rounded-lg flex items-center justify-center">
+                    <LineChart className="h-6 w-6 text-green-600" />
+                  </div>
+                </div>
+                <h3 className="text-lg font-semibold mb-3 text-green-900">Professional Visualisations</h3>
+                <ul className="text-sm text-slate-600 space-y-2">
+                  <li>• Radar chart comparing player vs club averages</li>
+                  <li>• Historical development trend lines</li>
+                  <li>• Recent match performance table</li>
+                  <li>• Development priority progress bars</li>
+                </ul>
+              </div>
+
+              {/* Development Plan */}
+              <div className="p-6 rounded-lg border bg-card text-card-foreground shadow-sm">
+                <div className="mb-4">
+                  <div className="h-12 w-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                    <Target className="h-6 w-6 text-orange-600" />
+                  </div>
+                </div>
+                <h3 className="text-lg font-semibold mb-3 text-orange-900">Development Plan</h3>
+                <ul className="text-sm text-slate-600 space-y-2">
+                  <li>• Progress bars with completion tracking</li>
+                  <li>• Action plans with priority classifications</li>
+                  <li>• Coach comments and feedback system</li>
+                  <li>• Super strength and development area indicators</li>
+                </ul>
+              </div>
+
+              {/* Authentic Details */}
+              <div className="p-6 rounded-lg border bg-card text-card-foreground shadow-sm">
+                <div className="mb-4">
+                  <div className="h-12 w-12 bg-emerald-100 rounded-lg flex items-center justify-center">
+                    <CheckCircle className="h-6 w-6 text-emerald-600" />
+                  </div>
+                </div>
+                <h3 className="text-lg font-semibold mb-3 text-emerald-900">Authentic Details</h3>
+                <ul className="text-sm text-slate-600 space-y-2">
+                  <li>• UK football terminology throughout</li>
+                  <li>• Professional assessment language</li>
+                  <li>• RAG status badges (Red/Amber/Green)</li>
+                  <li>• EPPP compliant footer</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Call to Action for Features */}
+            <div className="text-center mt-16">
+              <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-8 max-w-2xl mx-auto">
+                <h3 className="text-xl font-bold text-slate-900 mb-4">
+                  Experience the Complete System
+                </h3>
+                <p className="text-slate-600 mb-6">
+                  See all these features in action with authentic data and professional UK football assessment standards.
+                </p>
+                <Button size="lg" className="text-base px-8" asChild>
+                  <Link href="/model">
+                    <Activity className="h-4 w-4 mr-2" />
+                    View Live Implementation
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
 
