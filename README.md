@@ -1,4 +1,4 @@
-# Alan Batt - Next.js Project
+# SMP-CLINIC.COM - Next.js Project
 
 A modern, production-ready React application built with Next.js 15, Tailwind CSS v4, and TypeScript.
 
