@@ -1,136 +1,83 @@
-# SMP-CLINIC.COM - Next.js Project
+# DNA-1 Data Visualisation
 
-A modern, production-ready React application built with Next.js 15, Tailwind CSS v4, and TypeScript.
+A React-based data visualisation mini site showcasing the FA Four Corner Model for player development assessment.
 
-## 🚀 Features
+## 🎯 Overview
 
-- **Next.js 15** - Latest React framework with App Router
-- **Tailwind CSS v4** - Modern CSS framework with new CSS-first configuration
-- **TypeScript** - Full type safety throughout the application
-- **Radix UI** - Accessible, unstyled UI primitives
-- **Lucide React** - Beautiful, customizable icons
-- **ESLint & Prettier** - Code linting and formatting
-- **Dark Mode** - Built-in dark mode support
-- **Modern Tooling** - Class variance authority, clsx, tailwind-merge
+DNA-1 is a modern web application built to demonstrate data visualisation capabilities for the FA Four Corner Model, which evaluates player development across four key dimensions:
 
-## 📦 Tech Stack
+- **Technical/Tactical** - Skills, passing, shooting, tactical awareness
+- **Physical** - Speed, endurance, agility, power, recovery
+- **Psychological** - Confidence, concentration, decision making, resilience  
+- **Social** - Communication, teamwork, leadership, fair play
 
-### Frontend
-- **React 18** - UI library
+## ✨ Features
+
+- **Interactive Dashboard** - Comprehensive player assessment interface
+- **Animated Progress Indicators** - Circular progress bars showing percentage completion for each corner
+- **Detailed Metrics** - Individual skill ratings with trend indicators and priority classifications
+- **Historical Trends** - Line charts showing development over time
+- **Radar Charts** - Visual comparison against club averages
+- **Development Planning** - Action plans and coaching recommendations
+- **UK English** - All content uses proper British English spelling
+- **FA Compliant** - Follows official FA methodology and EPPP standards
+
+## 🚀 Tech Stack
+
 - **Next.js 15** - React framework with App Router
-- **TypeScript** - Type safety and better DX
-
-### Styling
-- **Tailwind CSS v4** - Utility-first CSS framework
-- **CSS Variables** - Design system with light/dark themes
-- **Responsive Design** - Mobile-first approach
-
-### UI Components
-- **Radix UI** - Accessible component primitives
+- **TypeScript** - Full type safety
+- **Tailwind CSS** - Modern styling with custom animations
+- **Recharts** - Data visualisation library
 - **Lucide React** - Icon library
-- **Class Variance Authority** - Component variant management
-- **Tailwind Merge** - Intelligent class merging
-
-### Development Tools
-- **ESLint** - Code linting
-- **Prettier** - Code formatting
-- **TypeScript** - Static type checking
-
-## 🛠️ Installation
-
-The project is already set up and ready to use. All dependencies have been installed.
 
 ## 🏃‍♂️ Getting Started
 
-1. Start the development server:
+1. Install dependencies:
+```bash
+npm install
+```
+
+2. Start the development server:
 ```bash
 npm run dev
 ```
 
-2. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Open [http://localhost:3000](http://localhost:3000) to view the application
 
-## 📁 Project Structure
+## 📊 Data Visualisation Components
 
-```
-src/
-├── app/                 # Next.js App Router
-│   ├── layout.tsx      # Root layout
-│   ├── page.tsx        # Home page
-│   └── globals.css     # Global styles with design system
-├── components/
-│   └── ui/             # Reusable UI components
-│       └── button.tsx  # Button component with variants
-└── lib/
-    └── utils.ts        # Utility functions
-```
+### Four Corner Gauges
+Animated circular progress indicators showing overall scores for each assessment area.
 
-## 🎨 Design System
+### Interactive Tabs
+Navigate between different assessment areas:
+- Overview - Radar charts and historical trends
+- Technical/Tactical - Detailed technical skills assessment
+- Physical - Physical attributes and fitness metrics
+- Psychological - Mental attributes and psychological traits
+- Social - Communication and teamwork skills
+- Development Plan - Priorities and action plans
 
-The project includes a comprehensive design system built with CSS variables and Tailwind CSS:
+### Charts & Metrics
+- Radar charts for performance profiling
+- Line charts for historical development trends
+- Detailed metric tables with trend indicators
+- Progress bars for development priorities
 
-- **Colors**: Primary, secondary, muted, accent, destructive
-- **Typography**: Font families, sizes, and weights
-- **Spacing**: Consistent spacing scale
-- **Border Radius**: Consistent border radius values
-- **Dark Mode**: Automatic dark mode support
+## 🎨 Design Features
 
-## 🧱 Components
+- **Responsive Design** - Works across all device sizes
+- **Modern UI** - Clean, professional interface suitable for coaching staff
+- **Colour-Coded Corners** - Each corner has its own distinctive colour theme
+- **Accessibility** - Built with accessible design principles
 
-### Button Component
-A fully customizable button component with multiple variants:
-- `default` - Primary button style
-- `destructive` - For destructive actions
-- `outline` - Outlined button
-- `secondary` - Secondary button style
-- `ghost` - Minimal button style
-- `link` - Link-styled button
+## 📁 Key Routes
 
-Sizes: `default`, `sm`, `lg`, `icon`
+- `/` - Homepage introducing the data visualisation platform
+- `/model` - Interactive FA Four Corner Model dashboard
 
-## 📱 Responsive Design
+## 🏆 FA Four Corner Model
 
-The application is built mobile-first and is fully responsive across all device sizes.
+This application demonstrates the FA's holistic approach to player development, assessing players across all four corners to provide a comprehensive view of their abilities and development needs.
 
-## 🌙 Dark Mode
-
-Dark mode is automatically enabled based on system preferences and can be toggled by the user.
-
-## 🚀 Deployment
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
-## 📝 Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
-
-## 🔧 Configuration
-
-### Tailwind CSS v4
-The project uses the new CSS-first configuration approach with CSS variables defined in `globals.css`.
-
-### TypeScript
-TypeScript is configured with strict settings for maximum type safety.
-
-### ESLint & Prettier
-Code quality tools are configured to maintain consistent code style.
-
-## 🤝 Contributing
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-Built with ❤️ using Next.js and Tailwind CSS
+Built with ❤️ for football development professionals
