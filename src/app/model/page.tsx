@@ -324,29 +324,54 @@ const FAFourCornerDashboard = () => {
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <div className="bg-white shadow-sm border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-6">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
-                <User className="w-8 h-8 text-white" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
+          {/* Main player info row */}
+          <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center space-x-3 sm:space-x-4">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
+                <User className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
               </div>
-              <div>
-                <h1 className="text-3xl font-bold text-gray-900">
+              <div className="min-w-0 flex-1">
+                <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 truncate">
                   {data.profile.name}
                 </h1>
-                <div className="flex items-center space-x-4 mt-2">
-                  <span className="text-gray-600">#{data.profile.clubNumber} • {data.profile.position}</span>
-                  <span className="text-gray-400">•</span>
-                  <span className="text-gray-600">Age {data.profile.age} • {data.profile.nationality}</span>
-                  <span className="text-gray-400">•</span>
-                  <span className="text-gray-600">{data.profile.height} • {data.profile.weight}</span>
+                <div className="text-sm sm:text-base text-gray-600 mt-1">
+                  #{data.profile.clubNumber} • {data.profile.position}
                 </div>
               </div>
             </div>
-            <div className="text-right">
-              <div className="text-3xl font-bold text-blue-600">{data.currentAssessment.overallRating}/100</div>
-              <div className="text-gray-600">Overall Rating</div>
-              <div className="text-sm text-gray-500 mt-1">Assessment: {data.currentAssessment.date}</div>
+            
+            {/* Overall Rating - Prominent display */}
+            <div className="text-center bg-blue-50 rounded-lg px-3 py-2 sm:px-4 sm:py-3 border-2 border-blue-200">
+              <div className="text-2xl sm:text-3xl font-bold text-blue-600">{data.currentAssessment.overallRating}<span className="text-lg sm:text-xl text-blue-400">/100</span></div>
+              <div className="text-xs sm:text-sm text-blue-700 font-medium">Overall Rating</div>
+            </div>
+          </div>
+          
+          {/* Player details in compact cards */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4">
+            <div className="bg-gray-50 rounded-lg px-3 py-2 text-center">
+              <div className="text-xs text-gray-500 uppercase tracking-wide">Age</div>
+              <div className="text-sm font-semibold text-gray-900">{data.profile.age}</div>
+            </div>
+            <div className="bg-gray-50 rounded-lg px-3 py-2 text-center">
+              <div className="text-xs text-gray-500 uppercase tracking-wide">Nation</div>
+              <div className="text-sm font-semibold text-gray-900">{data.profile.nationality}</div>
+            </div>
+            <div className="bg-gray-50 rounded-lg px-3 py-2 text-center">
+              <div className="text-xs text-gray-500 uppercase tracking-wide">Height</div>
+              <div className="text-sm font-semibold text-gray-900">{data.profile.height}</div>
+            </div>
+            <div className="bg-gray-50 rounded-lg px-3 py-2 text-center">
+              <div className="text-xs text-gray-500 uppercase tracking-wide">Weight</div>
+              <div className="text-sm font-semibold text-gray-900">{data.profile.weight}</div>
+            </div>
+          </div>
+          
+          {/* Assessment info */}
+          <div className="mt-3 sm:mt-4 text-center">
+            <div className="text-xs sm:text-sm text-gray-500">
+              Assessment: {data.currentAssessment.date} • Next Review: {data.currentAssessment.nextReview}
             </div>
           </div>
         </div>
@@ -371,15 +396,6 @@ const FAFourCornerDashboard = () => {
                   <p className="text-xl font-bold text-gray-900">{data.profile.clubTenure}</p>
                 </div>
                 <Clock className="w-8 h-8 text-blue-600" />
-              </div>
-            </div>
-            <div className="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-sm font-medium text-gray-600">Next Review</p>
-                  <p className="text-xl font-bold text-gray-900">{data.currentAssessment.nextReview}</p>
-                </div>
-                <Calendar className="w-8 h-8 text-green-600" />
               </div>
             </div>
             <div className="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
