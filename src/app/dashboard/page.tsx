@@ -22,10 +22,7 @@ export default function Dashboard() {
               {/* Desktop Navigation - Hidden on mobile */}
               <div className="hidden lg:flex items-center space-x-6">
                 <Button variant="ghost" asChild>
-                  <Link href="/">Home</Link>
-                </Button>
-                <Button variant="ghost" asChild>
-                  <Link href="/dashboard">Dashboard</Link>
+                  <Link href="/">Overview</Link>
                 </Button>
                 <Button variant="ghost" asChild>
                   <Link href="/model">Four Corner Model</Link>
@@ -119,7 +116,7 @@ export default function Dashboard() {
             <Button variant="outline" size="lg" className="text-base px-8" asChild>
               <Link href="/">
                 <ArrowRight className="h-4 w-4 mr-2" />
-                Back to Home
+                Back to Overview
               </Link>
             </Button>
           </div>

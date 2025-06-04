@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
-import { BarChart3, Database, TrendingUp, PieChart, Github, ArrowRight, User, Gauge, Navigation, LineChart, CheckCircle, Target, Activity } from "lucide-react"
+import { BarChart3, Database, TrendingUp, PieChart, Github, User, Gauge, Navigation, LineChart, CheckCircle, Target, Activity } from "lucide-react"
 import { MobileMenu } from "@/components/ui/mobile-menu"
 
 export default function Home() {
@@ -21,10 +21,7 @@ export default function Home() {
             {/* Desktop Navigation - Hidden on mobile */}
             <div className="hidden lg:flex items-center space-x-6">
               <Button variant="ghost" asChild>
-                <Link href="/">Home</Link>
-              </Button>
-              <Button variant="ghost" asChild>
-                <Link href="/dashboard">Dashboard</Link>
+                <Link href="/">Overview</Link>
               </Button>
               <Button variant="ghost" asChild>
                 <Link href="/model">Four Corner Model</Link>
@@ -125,15 +122,15 @@ export default function Home() {
             {/* Call to Action */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button size="lg" className="text-base px-8" asChild>
-                <Link href="/dashboard">
+                <Link href="/model">
                   <BarChart3 className="h-4 w-4 mr-2" />
-                  View Dashboard
+                  Explore Four Corner Model
                 </Link>
               </Button>
               <Button variant="outline" size="lg" className="text-base px-8" asChild>
-                <Link href="/model">
-                  <ArrowRight className="h-4 w-4 mr-2" />
-                  Explore Four Corner Model
+                <Link href="https://github.com/zenifieduk/dna-1" target="_blank">
+                  <Github className="h-4 w-4 mr-2" />
+                  View on GitHub
                 </Link>
               </Button>
             </div>

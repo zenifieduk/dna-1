@@ -339,10 +339,7 @@ const FAFourCornerDashboard = () => {
               {/* Desktop Navigation - Hidden on mobile */}
               <div className="hidden lg:flex items-center space-x-6">
                 <Button variant="ghost" asChild>
-                  <Link href="/">Home</Link>
-                </Button>
-                <Button variant="ghost" asChild>
-                  <Link href="/dashboard">Dashboard</Link>
+                  <Link href="/">Overview</Link>
                 </Button>
                 <Button variant="ghost" asChild>
                   <Link href="/model">Four Corner Model</Link>
