@@ -344,6 +344,9 @@ const FAFourCornerDashboard = () => {
                 <Button variant="ghost" asChild>
                   <Link href="/model">Four Corner Model</Link>
                 </Button>
+                <Button variant="ghost" asChild>
+                  <Link href="/voice">Aaran</Link>
+                </Button>
                 <Button variant="outline" size="sm" asChild>
                   <Link href="https://github.com/zenifieduk/dna-1" target="_blank">
                     <Github className="h-4 w-4 mr-2" />
